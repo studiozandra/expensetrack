@@ -1,10 +1,7 @@
+import ExpenseDate from '../components/ExpenseDate';
 import './ExpenseItem.css';
-import './ExpenseDate.js';
 
 function ExpenseItem(props) {
-    const day = props.date.toLocaleDateString("en-us", { day: "numeric" });
-    const month = props.date.toLocaleDateString("en-us", { month: "long" });
-    const year = props.date.getFullYear();
 
     return (
         <div className="expense-item">
